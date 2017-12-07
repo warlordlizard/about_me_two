@@ -114,7 +114,7 @@ while (number !== 42) {
 
 console.log('tries of question 6:', counterForSix);
 
-var favFood = ['pizza', 'burger','fries','tacos'];
+var favFood = ['pizza', 'burgers','fries','tacos'];
 var answer = prompt('What is one of Alex\'s favorite foods?');
 var flag;
 
