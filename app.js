@@ -80,10 +80,13 @@ var number;
 var counterForSix=0;
 
 
-while (number !== 42) {
+while (number !== 42 || counterForSix < 6) {
   number = parseInt(prompt(user +' , what is Alex\'s favorite number?'));
 
-  if (number > 42) {
+  if (number === 42) {
+    alert('correct');
+    break;
+  } else if (number > 42) {
     alert('Too high!');
     counterForSix++;
   } else if (number < 42) {
