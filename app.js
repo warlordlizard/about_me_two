@@ -7,49 +7,59 @@ var correct = 0;
 
 alert('Welcome ' + user + ', I am going to ask you some questions about Alex.  Please answer with either yes/no or y/n.');
 
-var offspring = prompt(user +', does Alex have kids?');
-console.log('offspring guess:', offspring);
+function q1() {
+  var offspring = prompt(user +', does Alex have kids?');
+  console.log('offspring guess:', offspring);
 
-if (offspring.toLowerCase() === 'y' || offspring.toLowerCase() === 'yes') {
-  alert('Correct ' + user +'! Alex has one daughter named Jillean');
-  offspring = true;
-  correct++;
-} else {
-  alert('Actually ' + user + ', Alex has a daughter named Jillean');
-  offspring = false;
+  if (offspring.toLowerCase() === 'y' || offspring.toLowerCase() === 'yes') {
+    alert('Correct ' + user +'! Alex has one daughter named Jillean');
+    offspring = true;
+    correct++;
+  } else {
+    alert('Actually ' + user + ', Alex has a daughter named Jillean');
+    offspring = false;
+  }
 }
+q1();
 
-var military = prompt(user +', has Alex served in the Military?');
-console.log('military guess:', military);
+function q2() {
+  var military = prompt(user +', has Alex served in the Military?');
+  console.log('military guess:', military);
 
-if (military.toLowerCase() === 'y' || military.toLowerCase() === 'yes') {
-  alert('Correct ' + user +'! Alex spent 5 years in the Army as a Chinese Mandarin Linguist');
-  military = true;
-  correct++;
-} else {
-  alert('Actually ' + user + ', Alex spent 5 years in the Army as a Chinese Mandarin Linguist');
-  military = false;
+  if (military.toLowerCase() === 'y' || military.toLowerCase() === 'yes') {
+    alert('Correct ' + user +'! Alex spent 5 years in the Army as a Chinese Mandarin Linguist');
+    military = true;
+    correct++;
+  } else {
+    alert('Actually ' + user + ', Alex spent 5 years in the Army as a Chinese Mandarin Linguist');
+    military = false;
+  }
+
+  if (offspring === true && military === true) {
+    alert('Wow! You are on a roll! Two Correct!');
+  }
 }
+q2();
 
-if (offspring === true && military === true) {
-  alert('Wow! You are on a roll! Two Correct!');
+function q3() {
+  var travel = prompt(user +', has Alex been to other countries aside from Canada?');
+  console.log('travel guess:', travel);
+
+  if (travel.toLowerCase() === 'y' || travel.toLowerCase() === 'yes') {
+    alert('Correct ' + user +'! Alex spent two months traveling around Asia and spent ten months deployed to Afghanistan while in the Military');
+    travel = true;
+    correct++;
+  } else {
+    alert('Actually ' + user + ', Alex spent two months traveling around Asia and spent ten months deployed to Afghanistan while in the Military');
+    travel = false;
+  }
+
+  if (offspring === true && military === true && travel === true) {
+    alert('Still rolling!! Three Correct!')
+  }
 }
+q3();
 
-var travel = prompt(user +', has Alex been to other countries aside from Canada?');
-console.log('travel guess:', travel);
-
-if (travel.toLowerCase() === 'y' || travel.toLowerCase() === 'yes') {
-  alert('Correct ' + user +'! Alex spent two months traveling around Asia and spent ten months deployed to Afghanistan while in the Military');
-  travel = true;
-  correct++;
-} else {
-  alert('Actually ' + user + ', Alex spent two months traveling around Asia and spent ten months deployed to Afghanistan while in the Military');
-  travel = false;
-}
-
-if (offspring === true && military === true && travel === true) {
-  alert('Still rolling!! Three Correct!')
-}
 
 var college = prompt(user +', did Alex go to Harvard?');
 console.log('college guess:', college);
