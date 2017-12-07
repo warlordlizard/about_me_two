@@ -75,3 +75,25 @@ if (girlfriend.toLowerCase() === 'y' || girlfriend.toLowerCase() === 'yes') {
 if (offspring === true && military === true && travel === true && college === true && girlfriend === true) {
   alert('Wow!!! Are you Alex or a good guesser? 100% Great Job!!!');
 }
+
+var number;
+var counterForSix=0;
+
+
+while (number !== 42) {
+  number = parseInt(prompt(user +' , what is Alex\'s favorite number?'));
+
+  if (number > 42) {
+    alert('Too high!');
+    counterForSix++;
+  } else if (number < 42) {
+    alert('Too Low!');
+    counterForSix++;
+  } else if (isNaN(number) || number === null) {
+    alert('Please enter a number');
+    counterForSix++;
+  }
+  console.log('number guess:', number);
+}
+
+console.log('tries of question 6:', counterForSix);
