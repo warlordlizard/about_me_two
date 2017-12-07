@@ -34,11 +34,11 @@ function q2() {
     alert('Actually ' + user + ', Alex spent 5 years in the Army as a Chinese Mandarin Linguist');
     military = false;
   }
-
-  if (offspring === true && military === true) {
-    alert('Wow! You are on a roll! Two Correct!');
-  }
 }
+// if (offspring === true && military === true) {
+//   alert('Wow! You are on a roll! Two Correct!');
+// }
+
 q2();
 
 function q3() {
@@ -53,11 +53,11 @@ function q3() {
     alert('Actually ' + user + ', Alex spent two months traveling around Asia and spent ten months deployed to Afghanistan while in the Military');
     travel = false;
   }
-
-  if (offspring === true && military === true && travel === true) {
-    alert('Still rolling!! Three Correct!')
-  }
 }
+// if (offspring === true && military === true && travel === true) {
+//   alert('Still rolling!! Three Correct!')
+// }
+
 q3();
 
 function q4() {
@@ -72,11 +72,11 @@ function q4() {
     alert('Actually ' + user + ', Alex graduated with his BA in Public Health from UW Seattle');
     college = false;
   }
-
-  if (offspring === true && military === true && travel === true && college === true) {
-    alert('Dang! Thought I would trip you up there. Harvard might have been a bit of a leap.  You are doing great!! Four Correct!');
-  }
 }
+// if (offspring === true && military === true && travel === true && college === true) {
+//   alert('Dang! Thought I would trip you up there. Harvard might have been a bit of a leap.  You are doing great!! Four Correct!');
+// }
+
 q4();
 
 function q5() {
@@ -92,10 +92,11 @@ function q5() {
     girlfriend = false;
   }
 
-  if (offspring === true && military === true && travel === true && college === true && girlfriend === true) {
-    alert('Wow!!! Are you Alex or a good guesser? 100% so far! Great Job!!!');
-  }
 }
+// if (offspring === true && military === true && travel === true && college === true && girlfriend === true) {
+//   alert('Wow!!! Are you Alex or a good guesser? 100% so far! Great Job!!!');
+// }
+
 q5();
 
 
