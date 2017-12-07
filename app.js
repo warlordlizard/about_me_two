@@ -118,7 +118,7 @@ var favFood = ['pizza', 'burgers','fries','tacos'];
 var answer = prompt('What is one of Alex\'s favorite foods?');
 var flag;
 
-for (var i = 0; i < 6; i++) {
+for (var i = 0; i < 5; i++) {
   console.log('guess at each iteration', answer);
 
   if ((answer === favFood[0]) || (answer === favFood[1]) || (answer === favFood[2]) || (answer === favFood[3])) {
