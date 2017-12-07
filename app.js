@@ -80,7 +80,7 @@ var number;
 var counterForSix=0;
 
 
-while (number !== 42 || counterForSix < 6) {
+while (number !== 42) {
   number = parseInt(prompt(user +' , what is Alex\'s favorite number?'));
 
   if (number === 42) {
@@ -97,6 +97,10 @@ while (number !== 42 || counterForSix < 6) {
     counterForSix++;
   }
   console.log('number guess:', number);
+
+  if (counterForSix >= 4) {
+    break;
+  }
 }
 
 console.log('tries of question 6:', counterForSix);
