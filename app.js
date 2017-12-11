@@ -103,22 +103,22 @@ function question() {
 
 
   function q6() {
-    var number;
+    var numberRand = [Math.floor(Math.random() * 100) + 1]
     var counterForSix=0;
+    var number;
 
-
-    while (number !== 42) {
+    while (number !== numberRand[0]) {
       number = parseInt(prompt(user +' , what is Alex\'s favorite number?'));
 
-      if (number === 42) {
-        alert('Correct! It is because 42 is the meaning of life');
+      if (number === numberRand[0]) {
+        alert('Correct!');
         counterForSix++;
         correct++;
         break;
-      } else if (number > 42) {
+      } else if (number >= numberRand[0]) {
         alert('Too high!');
         counterForSix++;
-      } else if (number < 42) {
+      } else if (number <= numberRand[0]) {
         alert('Too Low!');
         counterForSix++;
       } else if (isNaN(number) || number === null) {
@@ -126,6 +126,7 @@ function question() {
         counterForSix++;
       }
       console.log('number guess:', number);
+      console.log('random number generated:', numberRand[0]);
 
       if (counterForSix >= 4) {
         break;
@@ -135,7 +136,7 @@ function question() {
     console.log('tries of question 6:', counterForSix);
   }
   questionNum[5];
-
+  // q6();
   function q7() {
     var favFood = ['pizza', 'burgers','fries','tacos'];
     var answer = prompt('What is one of Alex\'s favorite foods?');
